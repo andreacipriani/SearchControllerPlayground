@@ -29,11 +29,6 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel!.text = filteredItems[indexPath.row]
         return cell
     }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let thirdVC = storyboard?.instantiateViewController(withIdentifier: "ThirdViewController")
-        navigationController?.pushViewController(thirdVC!, animated: true)
-    }
 }
 
 extension SecondViewController: UISearchResultsUpdating {

@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,7 +35,7 @@
                     <navigationItem key="navigationItem" id="aqx-ug-RJi"/>
                     <connections>
                         <outlet property="tableView" destination="71y-mO-zY7" id="ncX-xY-VLl"/>
-                        <segue destination="dgf-Ux-Cnr" kind="show" id="u6a-eW-cFV"/>
+                        <segue destination="dgf-Ux-Cnr" kind="show" identifier="Second" id="u6a-eW-cFV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -102,7 +103,7 @@
                                 </constraints>
                                 <state key="normal" title="Show FirstViewController"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="6Nx-c4-GYz"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="First" id="6Nx-c4-GYz"/>
                                 </connections>
                             </button>
                         </subviews>
